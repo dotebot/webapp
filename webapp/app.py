@@ -7,7 +7,7 @@ app = Flask(__name__)
 # App index
 @app.route('/')
 def hello():
-    provider = str(os.environ.get('PROVIDER', 'World'))
+    provider = str(os.environ.get('PROVIDER', 'Docker'))
     return 'Hello '+provider+'!!!'
 
 if __name__ == '__main__':
