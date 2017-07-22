@@ -1,3 +1,7 @@
 dependencies:
   post:
     - pip install -U -r webapp/requirements.txt
+
+test:
+  override:
+    - python webapp/tests.py
