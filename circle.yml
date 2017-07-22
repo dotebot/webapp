@@ -1,5 +1,3 @@
 dependencies:
   post:
     - pip install -U -r webapp/requirements.txt
-
-test:
