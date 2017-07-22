@@ -5,3 +5,9 @@ dependencies:
 test:
   override:
     - python webapp/tests.py
+
+deployment:
+ dockerhub:
+   branch: master
+   commands:
+     - $DOCKER_BUILD_TRIGGER
